@@ -19,7 +19,7 @@ body {
 .container {
     background-color: white;
     border: 2px solid black;
-    /*border-radius: 50px;*/
+    /*border-radius: 50px*/
     /*overflow: hidden;*/
     margin: 50%;
     display: grid;
@@ -29,8 +29,7 @@ body {
     grid-template-areas:
         "picture picture picture"
         "summary summary summary"
-        "buttons buttons buttons"
-        "attribution attribution attribution";
+        "buttons buttons buttons";
 }
 
 .container > img:first-child {
@@ -58,8 +57,9 @@ body {
 
 
 .attribution {
-    grid-area: attribution;
-    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
 }
 
 .attribution a {
