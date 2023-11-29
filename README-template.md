@@ -59,20 +59,52 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
-
-1. Using Git and Github in WebStorm.
-2. Using display: flex property to center container element.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+1.  Using the CSS pseudo-class :root (represent the <html> element and is identical
+    to the selector html, except that its specificity is higher) for declaring global CSS Variables.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/*
+ Using the CSS pseudo-class :root (represent the <html> element and is identical
+ to the selector html, except that its specificity is higher) for declaring global CSS Variables
+*/
+:root {
+  /* Declaring CSS global color values*/
+  --clr-primary-pale-blue : hsl(225, 100%, 94%);
+  --clr-primary-bright-blue : hsl(245, 75%, 52%);
+  --clr-neutral-very-pale-blue : hsl(225, 100%, 98%);
+  --clr-neutral-desatured-blue : hsl(224, 23%, 55%);
+  --clr-neutral-dark-blue : hsl(223, 47%, 23%);
+
+  /*Declaring CSS global font values*/
+  --font-family : 'Red Hat Display', sans-serif;
+  --font-size : 16px;
+  --font-weight-small : 500;
+  --font-weight-regular : 700;
+  --font-weight-bold : 900;
+}
+
+/*
+Call global CSS variables.
+*/
+body {
+  background-color: var(--clr-neutral-very-pale-blue);
 }
 ```
+2. Using box-shadow property for creating card effect.
+```css
+.container {
+  /*
+  first: horizontal offset
+  second: vertical offset
+  third : blur radius
+  last: color and transparency
+  */
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+```
+
+
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
