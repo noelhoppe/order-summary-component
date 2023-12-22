@@ -139,7 +139,7 @@ body {
 .attribution {
     position: absolute;
     bottom: 0;
-    font-size: 12px;
+    margin: auto;
 }
 
 .attribution a {
@@ -148,6 +148,7 @@ body {
 
 @media (max-width: 576px) {
     body {
-        background-image: url("./images/pattern-background-mobile.svg");
+        background-image: none;
+        background-color: var(--clr-neutral-very-pale-blue);
     }
 }
