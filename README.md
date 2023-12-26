@@ -4,6 +4,6 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this HTMl and CSS frontend project.
+Thanks for checking out this HTML and CSS frontend project.
 LIVE-Server: https://noelhoppe.github.io/order-summary-component/
 
